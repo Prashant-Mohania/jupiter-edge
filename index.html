@@ -28,6 +28,12 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
+      }
+    </script>
   </head>
 
   <body style="background-color: #222">
@@ -35,17 +41,22 @@
       <div class="cnt">
         <nav class="navbar navbar-expand-lg">
           <img src="assets/img/logo.svg" alt="logo" class="logo navbar-brand" />
+          <button type="button" class="btn-default ml-5 font-wt-400 btn-res text-light">
+            Download now
+          </button>
           <button
             class="navbar-toggler"
             type="button"
             data-toggle="collapse"
             data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
           >
             <!-- <button type="button" class="btn-default">Download now</button> -->
-            <i style="color: #fff">MENU</i>
+
+            <div class="container" onclick="myFunction(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
 
             <!-- <span class="navbar-toggler-icon"></span> -->
           </button>
@@ -68,7 +79,7 @@
                 <a class="nav-link red" href="#">About us</a>
               </li>
             </ul>
-            <button type="button" class="btn-default ml-5 text-light">
+            <button type="button" class="btn-default ml-5 text-light font-wt-400 res-btn">
               Download now
             </button>
           </div>
@@ -76,10 +87,10 @@
       </div>
     </header>
 
-    <section class="cover-page">
+    <section class="cover-page px-4">
       <div class="cnt">
         <div class="row align-items-center justify-content-center mt-my">
-          <div class="col-md-7 col-lg-6">
+          <div class="col-md-9 col-lg-6">
             <h1 class="text-light text-uppercase lg-text font-wt-400">
               cut ahead to
             </h1>
@@ -169,7 +180,7 @@
       </div>
     </section> -->
 
-    <section>
+    <section class="px-4">
       <div class="cnt">
         <div class="row align-items-center justify-between my-5">
           <div class="col-md-7 col-lg-7">
@@ -206,7 +217,7 @@
           <div class="support">
             <h5>Write to us at</h5>
             <h5>support@jupiter.money</h5>
-            <div class="row justify-between">
+            <div class="row align-content-center justify-between">
               <img src="assets/img/mail.svg" alt="" />
               <img src="assets/img/telegram.svg" alt="" />
               <img src="assets/img/fb.svg" alt="" />

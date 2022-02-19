@@ -45,11 +45,11 @@ a {
   margin-bottom: 1rem;
 }
 
-li,
+/* li,
 p {
   font-size: 1.6rem;
   margin-bottom: 0.5em;
-}
+} */
 
 ul li {
   list-style: none;
@@ -99,7 +99,7 @@ h6 {
 }
 
 .cnt {
-  max-width: 1400px;
+  max-width: 1200px;
   /* max-width: 1200px; */
   /* width: 90%; */
   margin: 0 auto;
@@ -113,8 +113,8 @@ h6 {
   background-color: #fc7a69;
   color: #222;
   border: none;
-  padding: 0.5rem 3rem;
-  font-size: 1.6rem;
+  padding: 0.5rem 2rem;
+  font-size: 1.8rem;
   border-radius: 5rem;
   cursor: pointer;
 }
@@ -152,6 +152,33 @@ h6 {
   width: 30%;
   color: #fff;
 }
+
+/* ------------------------ NavBar  ------------------------------- */
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
 /* ------------------------ COVER PAGE  ------------------------------- */
 
 .box {
@@ -189,12 +216,6 @@ h6 {
   font-weight: bold;
 } */
 
-.para-text {
-  margin-top: 1rem;
-  font-size: 1.8rem;
-  color: #fff;
-}
-
 .cnt::after {
   content: "";
   clear: both;
@@ -217,18 +238,6 @@ h6 {
   margin-top: 20rem;
 }
 
-.features-text {
-  color: white;
-  font-size: 3.6rem;
-  text-transform: uppercase;
-}
-
-.features-para-text {
-  margin-top: 1rem;
-  font-size: 2rem;
-  color: #fff;
-}
-
 .features .row {
   margin-bottom: 15rem;
 }
@@ -239,9 +248,9 @@ h6 {
   margin-top: 7rem;
 }
 .row-img {
-  width: 500px;
+  width: 400px;
   float: left;
-  height: 500px;
+  height: 400px;
   background-color: #c4c4c4;
   border-radius: 50%;
 }
@@ -357,14 +366,30 @@ h6 {
   font-weight: 400;
 }
 
-@media (max-width: 768px) {
-  .cnt {
-    width: 100%;
+.res-btn {
+  display: block;
+}
+
+.btn-res{
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .lg-text {
+    font-size: 4rem;
+  }
+
+  .res-btn{
+    display: none;
+  }
+
+  .btn-res{
+    display: block;
   }
 
   .slant-div {
     width: 100%;
-    height: 3400px;
+    height: 2700px;
     background-color: #444;
     position: absolute;
     top: 1100px;
