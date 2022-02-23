@@ -74,24 +74,33 @@ h6 {
   margin-top: 20rem;
 }
 
-.lg-heading {
-  font-size: 2.5rem;
+.m-my {
+  margin: 10rem 0;
+}
+
+.xsm-text {
+  font-size: 14px;
+}
+
+.sm-text {
+  font-size: 20px;
 }
 
 .md-text {
-  font-size: 2.4rem;
+  font-size: 24px;
 }
 
 .md-lg-text {
-  font-size: 3.6rem;
+  font-size: 36px;
 }
 
 .lg-text {
-  font-size: 4.8rem;
+  /* font-size: 4.8rem; */
+  font-size: 48px;
 }
 
 .xl-text {
-  font-size: 6.4rem;
+  font-size: 64px;
 }
 
 .red {
@@ -216,7 +225,7 @@ h6 {
   font-weight: bold;
 } */
 
-.cnt::after {
+.container-lg::after {
   content: "";
   clear: both;
   display: table;
@@ -224,7 +233,7 @@ h6 {
 
 .slant-div {
   width: 100%;
-  height: 2600px;
+  height: 2300px;
   background-color: #444;
   position: absolute;
   top: 800px;
@@ -284,6 +293,14 @@ h6 {
   font-size: 2.4rem;
   text-align: center;
   color: #fff;
+}
+
+.card-width-350{
+  width: 350px;
+}
+
+.card-width-450{
+  width: 450px;
 }
 
 .cbox-text {
@@ -370,26 +387,22 @@ h6 {
   display: block;
 }
 
-.btn-res{
+.btn-res {
   display: none;
 }
 
 @media (max-width: 991px) {
-  .lg-text {
-    font-size: 4rem;
-  }
-
-  .res-btn{
+  .res-btn {
     display: none;
   }
 
-  .btn-res{
+  .btn-res {
     display: block;
   }
 
   .slant-div {
     width: 100%;
-    height: 2700px;
+    height: 2200px;
     background-color: #444;
     position: absolute;
     top: 1100px;
