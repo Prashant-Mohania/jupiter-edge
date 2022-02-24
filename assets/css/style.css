@@ -1,27 +1,11 @@
-@font-face {
-  font-family: "TT Fors";
-  src: url("assets\fonts\tt-fors-regular.otf") format("opentype");
-}
+/* ------------------------------------------------  adding custom fonts  -------------------------------------- */
 
 @font-face {
-  font-family: "TT Fors";
-  src: url("assets\fonts\tt-fors-medium.otf") format("opentype");
+  font-family: "TTForsRegular";
+  src: url(../../assets/fonts/tt-fors-regular.otf);
 }
 
-@font-face {
-  font-family: "TT Fors";
-  src: url("assets\fonts\tt-fors-demibold.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "TT Fors";
-  src: url("assets\fonts\tt-fors-bold.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "TT Fors";
-  src: url("assets\fonts\tt-fors-black.otf") format("opentype");
-}
+/* ------------------------------------------------  base settings  -------------------------------------- */
 
 * {
   padding: 0;
@@ -34,6 +18,7 @@ html {
 }
 
 body {
+  font-family: "TTForsRegular", sans-serif;
   font-size: 10px;
   letter-spacing: 1.5;
   background-color: #222;
@@ -45,26 +30,11 @@ a {
   margin-bottom: 1rem;
 }
 
-/* li,
-p {
-  font-size: 1.6rem;
-  margin-bottom: 0.5em;
-} */
-
 ul li {
   list-style: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "TT Fors", sans-serif;
-  font-weight: Regular;
-  /* margin-bottom: 0.5em; */
-}
+/* ------------------------------------------------  utility classes  -------------------------------------- */
 
 .mt-my {
   margin-top: 10rem;
@@ -103,14 +73,20 @@ h6 {
   font-size: 64px;
 }
 
+.font-wt-400 {
+  font-weight: 400;
+}
+
+.font-wt-700 {
+  font-weight: 700;
+}
+
 .red {
   color: #fc7a69;
 }
 
 .cnt {
   max-width: 1200px;
-  /* max-width: 1200px; */
-  /* width: 90%; */
   margin: 0 auto;
 }
 
@@ -123,43 +99,9 @@ h6 {
   color: #222;
   border: none;
   padding: 0.5rem 2rem;
-  font-size: 1.8rem;
+  font-size: 18px;
   border-radius: 5rem;
   cursor: pointer;
-}
-
-.btn-more {
-  background-color: #fff;
-  color: #222;
-  border: none;
-  padding: 0.2rem 1rem;
-  font-size: 1rem;
-  border-radius: 5rem;
-  cursor: pointer;
-  margin-top: 1.5rem;
-}
-
-.fees-charges {
-  padding: 1rem;
-  background-color: #fc7a69;
-  border-radius: 1rem;
-  width: 30%;
-  color: #fff;
-}
-.tnc {
-  padding: 1rem;
-  background-color: #075955;
-  border-radius: 1rem;
-  width: 30%;
-  color: #fff;
-}
-
-.support {
-  padding: 1rem;
-  background-color: #656565;
-  border-radius: 1rem;
-  width: 30%;
-  color: #fff;
 }
 
 /* ------------------------ NavBar  ------------------------------- */
@@ -212,18 +154,19 @@ h6 {
   margin: auto 0;
 }
 
-.font-wt-400 {
-  font-family: "TT Fors";
-  font-weight: 400;
+.slant-div {
+  width: 100%;
+  height: 2300px;
+  background-color: #444;
+  position: absolute;
+  top: 800px;
+  left: 0;
+  z-index: -1;
+  transform: skewY(30deg);
+  transform-origin: top left;
 }
 
-.font-wt-700 {
-  font-family: "TT Fors";
-  font-weight: 400;
-}
-/* .bold-text {
-  font-weight: bold;
-} */
+/* ------------------------ CAROUSEL  ------------------------------- */
 
 .vert .carousel-item-next.carousel-item-left,
 .vert .carousel-item-prev.carousel-item-right {
@@ -243,38 +186,23 @@ h6 {
   transform: translate3d(0, -100%, 0);
 }
 
-/*  */
-.cnt::after {
-  content: "";
-  clear: both;
-  display: table;
+ol.carousel-indicators {
+  display: block;
 }
 
-.slant-div {
-  width: 100%;
-  height: 2300px;
-  background-color: #444;
-  position: absolute;
-  top: 800px;
-  left: 0;
-  z-index: -1;
-  transform: skewY(30deg);
-  transform-origin: top left;
+ol.carousel-indicators li {
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 0;
+  background: rgba(183, 179, 179, 0.2);
 }
 
-.features {
-  margin-top: 20rem;
+ol.carousel-indicators li.active {
+  background: rgba(183, 179, 179, 1);
 }
 
-.features .row {
-  margin-bottom: 15rem;
-}
-
-.features .row1 .row-text {
-  float: right;
-  width: 50%;
-  margin-top: 7rem;
-}
 .row-img {
   width: 400px;
   float: left;
@@ -283,35 +211,10 @@ h6 {
   border-radius: 50%;
 }
 
-.features .row2 .row-text {
-  float: left;
-  width: 50%;
-  margin-top: 7rem;
-}
-.features .row2 .row-img {
-  width: 500px;
-  float: right;
-  height: 500px;
-  background-color: #c4c4c4;
-  border-radius: 50%;
-}
+/* ---------------------------------------- Testimonial classes  --------------------------------------------- */
 
-.row::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-.features-text-center {
-  font-size: 3.6rem;
-  text-align: center;
-  margin-bottom: 2rem;
-  color: #fff;
-}
-.features-para-text-center {
-  font-size: 2.4rem;
-  text-align: center;
-  color: #fff;
+.testimonial-heading{
+  background: url(../../assets/img/dt.svg) no-repeat left top;  
 }
 
 .card-width-350 {
@@ -321,43 +224,40 @@ h6 {
 .card-width-450 {
   width: 450px;
 }
+/* ---------------------------------------- Footer classes  --------------------------------------------- */
 
-.cbox-text {
-  float: left;
-  width: 60%;
+.fees-charges {
+  padding: 1rem;
+  background-color: #fc7a69;
+  border-radius: 1rem;
+  color: #fff;
 }
-.cbox-img {
-  float: right;
-  /* width: 60%; */
-}
-
-.conclusion-heading {
-  font-size: 3.6rem;
-  /* text-align: center; */
-  margin-bottom: 2rem;
+.tnc {
+  padding: 1rem;
+  background-color: #075955;
+  border-radius: 1rem;
   color: #fff;
 }
 
-.conclusion-para-text {
-  font-size: 2.4rem;
-  /* text-align: justify; */
+.support {
+  padding: 1rem;
+  background-color: #656565;
+  border-radius: 1rem;
   color: #fff;
-  margin-bottom: 3rem;
 }
 
-.conclusion-btn {
-  border-radius: 3rem;
-  padding: 1rem 3rem;
-  font-size: 2.4rem;
-  color: #fff;
-  border: 2px solid #fff;
-  margin-bottom: 2rem;
+.btn-more {
+  background-color: #fff;
+  color: #222;
+  border: none;
+  padding: 0.2rem 1rem;
+  font-size: 1rem;
+  border-radius: 5rem;
+  cursor: pointer;
+  margin-top: 1.5rem;
 }
-
-/* ---------------------------------------- Footer CSS  --------------------------------------------- */
 
 .footer-big {
-  margin-top: 2rem;
   padding: 50px 0 65px 0;
 }
 
@@ -429,5 +329,9 @@ h6 {
     z-index: -1;
     transform: skewY(30deg);
     transform-origin: top left;
+  }
+
+  ol.carousel-indicators {
+    display: none;
   }
 }

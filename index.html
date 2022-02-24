@@ -72,16 +72,17 @@
               <li class="nav-item mt-3 ml-4">
                 <a class="nav-link red" href="#">Community</a>
               </li>
-              <li class="nav-item mt-3 ml-4">
-                <a class="nav-link red" href="#">Credit</a>
+              <li class="nav-item dropdown mt-3 ml-4">
+                <a class="nav-link dropdown-toggle red" href="#">Credit</a>
               </li>
-              <li class="nav-item mt-3 ml-4">
-                <a class="nav-link red" href="#">Lifestyle</a>
+              <li class="nav-item dropdown mt-3 ml-4">
+                <a class="nav-link dropdown-toggle red" href="#">Lifestyle</a>
               </li>
               <li class="nav-item mt-3 ml-4">
                 <a class="nav-link red" href="#">About us</a>
               </li>
             </ul>
+            <div class="mx-5"></div>
             <button
               type="button"
               class="btn-default ml-5 text-light font-wt-400 res-btn"
@@ -95,8 +96,8 @@
 
     <section class="cover-page px-4">
       <div class="cnt">
-        <div class="row align-items-center justify-content-center mt-my">
-          <div class="col-md-9 col-lg-6 col-12">
+        <div class="row justify-content-center mt-my">
+          <div class="col-md-6 col-lg-6 col-12 my-auto">
             <h1 class="text-light text-uppercase lg-text font-wt-400">
               cut ahead to
             </h1>
@@ -108,15 +109,15 @@
               buy stuff now, & pay later.<br />There’s no other like us, you’ll
               see!
             </p>
-            <img class="mr-3" src="assets/img/play-store.svg" alt="" />
-            <img src="assets/img/app-store.svg" alt="" />
+            <div class="mt-5">
+              <img class="mr-3" src="assets/img/play-store.svg" alt="" />
+              <img src="assets/img/app-store.svg" alt="" />
+            </div>
           </div>
           <img src="assets/img/Group 5477.svg" alt="" />
         </div>
       </div>
       <div class="cnt">
-        <!-- <div class="row align-items-center justify-between mt-my-2"> -->
-        <!-- <div class="container"> -->
         <div
           id="carouselExampleControls"
           class="carousel vert slide"
@@ -124,21 +125,6 @@
           data-interval="1200"
         >
           <div class="row align-items-center justify-between mt-my-2">
-            <!-- <ol class="carousel-indicators">
-              <li
-                data-target="#carouselExampleIndicators"
-                data-slide-to="0"
-                class="active"
-              ></li>
-              <li
-                data-target="#carouselExampleIndicators"
-                data-slide-to="1"
-              ></li>
-              <li
-                data-target="#carouselExampleIndicators"
-                data-slide-to="2"
-              ></li>
-            </ol> -->
             <div class="col-md-5 col-lg-5">
               <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -167,49 +153,16 @@
                 </div>
               </div>
             </div>
-            <!-- <a
-              class="carousel-control-prev"
-              href="#carouselExampleControls"
-              role="button"
-              data-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon bg-dark rounded-circle"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a
-              class="carousel-control-next"
-              href="#carouselExampleControls"
-              role="button"
-              data-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon bg-dark rounded-circle"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Next</span>
-            </a> -->
-            <div class="col-md-1 col-lg1">
-              <!-- <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-target="#carouselExampleIndicators"
+            <div class="col-md-1 col-lg1 mt-5">
+              <ol class="carousel-indicators">
+                <li
+                  data-target="#carousel"
                   data-slide-to="0"
-                  class="active btn-circle"
-                ></button>
-                <button
-                  type="button"
-                  data-target="#carouselExampleIndicators"
-                  data-slide-to="1"
-                ></button>
-                <button
-                  type="button"
-                  data-target="#carouselExampleIndicators"
-                  data-slide-to="2"
-                ></button>
-              </div> -->
+                  class="active"
+                ></li>
+                <li data-target="#carousel" data-slide-to="1"></li>
+                <li data-target="#carousel" data-slide-to="2"></li>
+              </ol>
             </div>
             <div class="col-md-6 col-lg-6">
               <h3 class="text-light font-wt-400 lg-text">
@@ -222,20 +175,8 @@
               </p>
             </div>
           </div>
-          <!-- </div> -->
-          <!-- <div class="row-img"></div> -->
-
-          <!-- <div class="col-md-7 col-lg-6">
-            <h3 class="text-light font-wt-400 lg-text">
-              Get upto Rs. 25,000<br />Credit Limit
-            </h3>
-        <p class="text-light font-wt-400 md-text">
-          Do more with higher credit limit!<br />Get upto ₹25,000 within
-          minutes!
-        </p>
-      </div> -->
         </div>
-        <div class="row align-items-center justify-between mt-my">
+        <div class="row justify-between mt-my">
           <div class="col-md-7 col-lg-6 col-sm-12">
             <h3 class="text-light font-wt-400 lg-text">
               Shop now and<br />Pay in 15 days
@@ -246,15 +187,15 @@
             </p>
           </div>
           <!-- <div class="col-md-3 col-lg-6 col-sm-12"> -->
-          <div class="row-img"></div>
+          <div class="row-img mx-auto"></div>
           <!-- </div> -->
         </div>
       </div>
 
       <div class="m-my">
         <div class="cnt">
-          <h1 class="text-light font-wt-700 md-lg-text text-center">
-            Take us anywhere & everywhere
+          <h1 class="text-light font-wt-700 lg-text text-center">
+            Take us anywhere &<br />everywhere
           </h1>
           <p class="text-light font-wt-400 md-text text-center">
             Need to catch up with friends for a drink? Got the munchies?<br />
@@ -274,11 +215,11 @@
 
     <section class="mt-my-2">
       <div class="cnt">
-        <div class="row mb-5 p-5">
-          <div class="col-lg-6 col-6">
+        <div class="row testimonial-heading mb-5 p-5 mx-md-auto mx-sm-auto">
+          <div class="col-lg-6 col-12">
             <div class="row">
               <div class="col-12">
-                <h1 class="lg-text text-light testimonial-heading">
+                <h1 class="lg-text text-light">
                   We clock in extra<br />hours just for you
                 </h1>
                 <p class="sm-text text-light">
@@ -291,9 +232,9 @@
                   <div class="card-body mt-4">
                     <div class="row">
                       <div class="col-1">
-                        <img src="assets/img/dt.svg" alt="" width="15px" />
+                        <img src="assets/img/dt-light.svg" alt="" width="15px" />
                       </div>
-                      <div class="col-11">
+                      <div class="col-10">
                         <div class="card-text font-wt-400 text-light md-text">
                           To quickly start my startup landing page design, I was
                           looking for a landing page UI Kit. Landify is one of
@@ -314,7 +255,7 @@
             </div>
           </div>
           <!-- right side testimonial -->
-          <div class="col-lg-6 col-6">
+          <div class="col-lg-6 col-12">
             <div class="row">
               <div class="col-12 my-5">
                 <div class="card bg-dark card-width-450 p-4">
@@ -322,7 +263,7 @@
                   <div class="card-body mt-4">
                     <div class="row">
                       <div class="col-1">
-                        <img src="assets/img/dt.svg" alt="" width="15px" />
+                        <img src="assets/img/dt-light.svg" alt="" width="15px" />
                       </div>
                       <div class="col-11">
                         <div class="card-text font-wt-400 text-light md-text">
@@ -352,9 +293,9 @@
                   <div class="card-body mt-4">
                     <div class="row">
                       <div class="col-1">
-                        <img src="assets/img/dt.svg" alt="" width="15px" />
+                        <img src="assets/img/dt-light.svg" alt="" width="15px" />
                       </div>
-                      <div class="col-11">
+                      <div class="col-10">
                         <div class="card-text font-wt-400 text-light md-text">
                           Landify saved our time in designing my company page.
                         </div>
@@ -401,7 +342,8 @@
     <img
       src="assets/img/Blank _ Jupiter Edge Website Section Join us  1.svg"
       alt=""
-      class="img-fluid mt-my-2"
+      width="100%"
+      class="mt-my"
     />
 
     <!-- <section class="more mt-my-2 px-5">
@@ -438,31 +380,51 @@
         <div class="cnt">
           <div class="row align-content-center justify-between">
             <!-- <div class="col-md-2 col-lg-6"> -->
-            <div class="fees-charges">
-              <h5>Fees and Charges</h5>
-              <button class="btn-more">Know More</button>
+            <div class="col-12 col-lg-4 mt-3">
+              <div class="fees-charges">
+                <h5 class="sm-text font-wt-400">Fees and Charges</h5>
+                <button class="btn-more">Know More</button>
+              </div>
             </div>
-            <div class="tnc">
-              <h5>Terms and Conditions</h5>
-              <button class="btn-more">Know More</button>
+            <div class="col-12 col-lg-4 mt-3">
+              <div class="tnc">
+                <h5 class="sm-text font-wt-400">Terms and Conditions</h5>
+                <button class="btn-more">Know More</button>
+              </div>
             </div>
-            <div class="support">
-              <h5>Write to us at</h5>
-              <h5>support@jupiter.money</h5>
-              <div class="row align-content-center justify-between">
-                <img src="assets/img/mail.svg" alt="" />
-                <img src="assets/img/telegram.svg" alt="" />
-                <img src="assets/img/fb.svg" alt="" />
-                <img src="assets/img/linkedin.svg" alt="" />
-                <img src="assets/img/yt.svg" alt="" />
-                <img src="assets/img/twitter.svg" alt="" />
+            <div class="col-12 col-lg-4 mt-3">
+              <div class="support">
+                <h5 class="sm-text font-wt-400">Write to us at</h5>
+                <h5 style="font-size: 18px; font-weight: 400">
+                  support@jupiter.money
+                </h5>
+                <div class="row">
+                  <div class="col-2">
+                    <img src="assets/img/mail.svg" alt="" />
+                  </div>
+                  <div class="col-2">
+                    <img src="assets/img/telegram.svg" alt="" />
+                  </div>
+                  <div class="col-2">
+                    <img src="assets/img/fb.svg" alt="" />
+                  </div>
+                  <div class="col-2">
+                    <img src="assets/img/linkedin.svg" alt="" />
+                  </div>
+                  <div class="col-2">
+                    <img src="assets/img/yt.svg" alt="" />
+                  </div>
+                  <div class="col-2">
+                    <img src="assets/img/twitter.svg" alt="" />
+                  </div>
+                </div>
               </div>
             </div>
             <!-- </div> -->
           </div>
 
           <div class="row justify-content-between mt-5">
-            <div class="col-md-2 col-lg-2 col-sm-12">
+            <div class="col-md-12 col-lg-2 col-sm-12">
               <div class="footer-widget">
                 <div class="widget-about">
                   <img src="assets/img/logo.svg" alt="" class="img-fluid" />
@@ -473,16 +435,18 @@
               <!-- Ends: .footer-widget -->
             </div>
 
-            <div class="col-md-7 col-lg-7 col-sm-12 mt-5">
+            <div class="col-md-12 col-lg-7 col-sm-12 mt-5">
+              <!-- <center> -->
               <h2 class="text-light">Working with trusted partners</h2>
               <h6 class="text-light">
                 Jupiter deploys high level security standards to keep your money
                 sage
               </h6>
               <img class="mb-5" src="assets/img/partners.svg" alt="" />
+              <!-- </center> -->
             </div>
 
-            <div class="col-md-2 col-lg-2 col-sm-4">
+            <div class="col-md-12 col-lg-2 col-sm-12 m-sm-5">
               <div class="footer-widget">
                 <div class="footer-menu no-padding">
                   <h4 class="footer-widget-title mb-3">Usefull links</h4>
