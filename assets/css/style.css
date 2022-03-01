@@ -33,6 +33,10 @@ ul li {
 
 /* ------------------------------------------------  utility classes  -------------------------------------- */
 
+.mt-my-3{
+  margin-top: 60rem;
+}
+
 .mt-my {
   margin-top: 10rem;
 }
@@ -129,34 +133,24 @@ ul li {
 
 /* ------------------------ COVER PAGE  ------------------------------- */
 
-.box {
-  width: 49%;
-  margin-top: 5rem;
-  /* border: #fff solid 2px; */
+.cover-page{
+  position: relative;;
 }
 
-.box-text {
-  float: left;
-  margin-top: 15rem;
-}
-.box-img {
-  float: right;
-}
-
-.box-img img {
-  width: 90%;
+.cover-page .img{
+  position: absolute;
+  top: 150px;
+  left: 0;
+  padding: 0 5rem;
 }
 
-.store {
-  margin: auto 0;
-}
 
 .slant-div {
   width: 100%;
   height: 3200px;
   background-color: #444;
   position: absolute;
-  top: 800px;
+  top: 1000px;
   left: 0;
   z-index: -1;
   transform: skewY(30deg);
