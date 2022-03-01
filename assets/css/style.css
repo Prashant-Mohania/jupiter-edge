@@ -13,10 +13,6 @@
   box-sizing: border-box;
 }
 
-html {
-  font-family: "TT Fors";
-}
-
 body {
   font-family: "TTForsRegular", sans-serif;
   font-size: 10px;
@@ -28,6 +24,7 @@ a {
   font-size: 1rem;
   text-decoration: none;
   margin-bottom: 1rem;
+  font-family: 'TTForsRegular';
 }
 
 ul li {
@@ -86,7 +83,8 @@ ul li {
 }
 
 .cnt {
-  max-width: 1200px;
+  border: 2px solid #fc7a69;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -156,7 +154,7 @@ ul li {
 
 .slant-div {
   width: 100%;
-  height: 2300px;
+  height: 3200px;
   background-color: #444;
   position: absolute;
   top: 800px;
@@ -321,10 +319,10 @@ ol.carousel-indicators li.active {
 
   .slant-div {
     width: 100%;
-    height: 2200px;
+    height: 3400px;
     background-color: #444;
     position: absolute;
-    top: 1100px;
+    top: 1300px;
     left: 0;
     z-index: -1;
     transform: skewY(30deg);
