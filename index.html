@@ -7,15 +7,27 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
 
     <!-- Bootstrap CSS -->
+
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
 
@@ -121,7 +133,6 @@
           src="./assets/json/hero landing .json"
           background="transparent"
           speed="1"
-          style="background-color: #222"
           loop
           autoplay
         ></lottie-player>
@@ -135,35 +146,38 @@
           id="carousel"
           class="carousel vert slide"
           data-ride="carousel"
-          data-interval="3000"
+          data-interval="1000"
         >
-          <div class="row align-items-center justify-between mt-my-2 px-2">
-            <div class="col-lg-5 col-12">
+          <div class="row justify-between mt-my-2 px-2">
+            <div class="col-lg-5">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img
                     class="d-block mx-auto img-fluid"
                     src="assets/img/combine_03-01-03 1.svg"
                     alt="First Slide"
+                    height="360px"
                   />
                 </div>
                 <div class="carousel-item">
                   <img
                     class="d-block mx-auto img-fluid"
-                    src="assets/img/Play Store Creatives-08 1.svg"
+                    src="assets/img/combine_03-01-03 1.svg"
                     alt="Second slide"
+                    height="360px"
                   />
                 </div>
                 <div class="carousel-item">
                   <img
                     class="d-block mx-auto img-fluid"
-                    src="assets/img/Play Store Creatives-08 1.svg"
+                    src="assets/img/combine_03-01-03 1.svg"
                     alt="Third slide"
+                    height="360px"
                   />
                 </div>
               </div>
             </div>
-            <div class="col-lg-1 mt-5">
+            <div class="col-lg-1 c-indi">
               <ol class="carousel-indicators">
                 <li
                   data-target="#carousel"
@@ -174,7 +188,7 @@
                 <li data-target="#carousel" data-slide-to="2"></li>
               </ol>
             </div>
-            <div class="col-lg-6 col-12 my-auto px-2">
+            <div class="col-lg-6 my-auto px-2">
               <h3 class="text-light font-wt-700 lg-text">
                 Get upto Rs. 25,000<br />Credit Limit
               </h3>
@@ -195,8 +209,10 @@
                 Shop now and<br />Pay in 15 days
               </h3>
               <p class="text-light font-wt-400 md-text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Temporibus voluptate esse accusamus consequatur tempora.
+                Lorem ipsum dolor sit amet,<br />
+                consectetuer elit, sed diam nonummy<br />
+                nibh euismod<br />
+                tincidunt ut
               </p>
             </div>
             <div class="col-lg-6">
@@ -205,7 +221,6 @@
                 src="./assets/json/calendar.json"
                 background="transparent"
                 speed="1"
-                style="background-color: #222"
                 loop
                 autoplay
               ></lottie-player>
@@ -230,7 +245,6 @@
             src="./assets/json/conveyor.json"
             background="transparent"
             speed="1"
-            style="background-color: #222"
             loop
             autoplay
           ></lottie-player>
@@ -244,7 +258,7 @@
       </div>
     </section>
 
-    <section class="mt-my-2">
+    <section class="mt-my-3">
       <div class="cnt">
         <div class="row testimonial-heading mb-5 p-2 mx-md-auto mx-sm-auto">
           <div class="col-lg-6 col-12">
@@ -395,7 +409,6 @@
         src="./assets/json/joinus.json"
         background="transparent"
         speed="1"
-        style="background-color: #222"
         loop
         autoplay
       ></lottie-player>
@@ -540,20 +553,5 @@
 
     <!-- Lottie Script -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
   </body>
 </html>
