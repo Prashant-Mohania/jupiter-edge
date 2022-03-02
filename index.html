@@ -1,75 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link red rel="stylesheet" href="assets/css/style.css" />
-    <link
-      rel="preload"
-      as="fetch"
-      crossorigin="anonymous"
-      type="application/json"
-      href="assets/lf20_daqxfdyi.json"
-    />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
+    <!-- Bootstrap CSS -->
     <link
-      red
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
-    <title>Jupiter Edge</title>
-
     <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
 
+    <title>Edge</title>
     <script>
       function myFunction(x) {
         x.classList.toggle("change");
       }
     </script>
   </head>
-
   <body style="background-color: #222">
     <header class="header">
       <div class="cnt">
         <nav class="navbar navbar-expand-lg">
           <img src="assets/img/logo.svg" alt="logo" class="logo navbar-brand" />
           <button
-            type="button"
             class="btn-default ml-5 font-wt-400 btn-res text-light"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
           >
             Download now
           </button>
           <button
             class="navbar-toggler"
             type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
           >
-            <!-- <button type="button" class="btn-default">Download now</button> -->
-
-            <div class="cnt" onclick="myFunction(this)">
+            <div onclick="myFunction(this)">
               <div class="bar1"></div>
               <div class="bar2"></div>
               <div class="bar3"></div>
             </div>
-
-            <!-- <span class="navbar-toggler-icon"></span> -->
           </button>
 
           <div
@@ -77,17 +58,31 @@
             id="navbarSupportedContent"
           >
             <ul class="navbar-nav">
-              <li class="nav-item mt-3 ml-4">
-                <a class="nav-link red" href="#">Community</a>
+              <li class="nav-item mt-3">
+                <a class="text-red sm-text mx-5 text-decoration-none" href="#"
+                  >Community</a
+                >
               </li>
-              <li class="nav-item dropdown mt-3 ml-4">
-                <a class="nav-link dropdown-toggle red" href="#">Credit</a>
+              <li class="nav-item dropdown mt-3">
+                <a
+                  class="text-red dropdown-toggle mx-5 sm-text mx-5 text-decoration-none"
+                  href="#"
+                  >Credit</a
+                >
               </li>
-              <li class="nav-item dropdown mt-3 ml-4">
-                <a class="nav-link dropdown-toggle red" href="#">Lifestyle</a>
+              <li class="nav-item dropdown mt-3">
+                <a
+                  class="text-red dropdown-toggle sm-text mx-5 text-decoration-none"
+                  href="#"
+                  >Lifestyle</a
+                >
               </li>
-              <li class="nav-item mt-3 ml-4">
-                <a class="nav-link red" href="#">About us</a>
+              <li class="nav-item mt-3">
+                <a
+                  class="text-red sm-text mx-5 red-text text-decoration-none"
+                  href="#"
+                  >About us</a
+                >
               </li>
             </ul>
             <div class="mx-5"></div>
@@ -121,13 +116,20 @@
             <img src="assets/img/app-store.svg" alt="" />
           </div>
         </div>
-        <img
-          src="assets/img/Blank _ Jupiter edge landing section illustration 1.svg"
-          alt=""
-          class="img img-fluid"
-          width="100%"
-        />
+        <lottie-player
+          class="d-block mx-auto img-fluid"
+          src="./assets/json/hero landing .json"
+          background="transparent"
+          speed="1"
+          style="background-color: #222"
+          loop
+          autoplay
+        ></lottie-player>
       </div>
+      <div class="slant-div align-items-center"></div>
+    </section>
+
+    <section class="features mt-my-2">
       <div class="cnt">
         <div
           id="carousel"
@@ -135,19 +137,10 @@
           data-ride="carousel"
           data-interval="3000"
         >
-          <div class="row align-items-center justify-between mt-my-3">
-            <div class="col-lg-5">
+          <div class="row align-items-center justify-between mt-my-2 px-2">
+            <div class="col-lg-5 col-12">
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <!-- <lottie-player
-                    class="d-block mx-auto img-fluid"
-                    src="https://assets6.lottiefiles.com/packages/lf20_daqxfdyi.json"
-                    background="transparent"
-                    speed="1"
-                    style="width: 300px; height: 300px"
-                    loop
-                    autoplay
-                  ></lottie-player> -->
                   <img
                     class="d-block mx-auto img-fluid"
                     src="assets/img/combine_03-01-03 1.svg"
@@ -181,7 +174,7 @@
                 <li data-target="#carousel" data-slide-to="2"></li>
               </ol>
             </div>
-            <div class="col-lg-6 my-auto">
+            <div class="col-lg-6 col-12 my-auto px-2">
               <h3 class="text-light font-wt-700 lg-text">
                 Get upto Rs. 25,000<br />Credit Limit
               </h3>
@@ -192,23 +185,31 @@
             </div>
           </div>
         </div>
-        <div class="row justify-between mt-my-2">
-          <div class="col-lg-6 my-auto">
-            <h3 class="text-light font-wt-700 lg-text">
-              Shop now and<br />Pay in 15 days
-            </h3>
-            <p class="text-light font-wt-400 md-text">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Temporibus voluptate esse accusamus consequatur tempora.
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <img
-              class="d-block mx-auto img-fluid"
-              src="assets/img/calendar.svg"
-              alt="Third slide"
-              width="566px"
-            />
+      </div>
+
+      <div class="mt-my-2">
+        <div class="cnt">
+          <div class="row justify-between mt-5 px-2">
+            <div class="col-lg-6 my-auto">
+              <h3 class="text-light font-wt-700 lg-text">
+                Shop now and<br />Pay in 15 days
+              </h3>
+              <p class="text-light font-wt-400 md-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Temporibus voluptate esse accusamus consequatur tempora.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <lottie-player
+                class="d-block mx-auto img-fluid"
+                src="./assets/json/calendar.json"
+                background="transparent"
+                speed="1"
+                style="background-color: #222"
+                loop
+                autoplay
+              ></lottie-player>
+            </div>
           </div>
         </div>
       </div>
@@ -224,20 +225,28 @@
             We got you! Spend with Jupiter Edge anywhere, everywhere
             hassle-free!
           </p>
-          <img
+          <lottie-player
+            class="d-block mx-auto img-fluid"
+            src="./assets/json/conveyor.json"
+            background="transparent"
+            speed="1"
+            style="background-color: #222"
+            loop
+            autoplay
+          ></lottie-player>
+          <!-- <img
             src="assets/img/Blank _ Jupiter Edge Website Section - shop anywhere 1.svg"
             alt=""
             class="img-fluid"
             width="100%"
-          />
+          /> -->
         </div>
       </div>
-      <div class="slant-div align-items-center"></div>
     </section>
 
     <section class="mt-my-2">
       <div class="cnt">
-        <div class="row testimonial-heading mb-5 p-5 mx-md-auto mx-sm-auto">
+        <div class="row testimonial-heading mb-5 p-2 mx-md-auto mx-sm-auto">
           <div class="col-lg-6 col-12">
             <div class="row">
               <div class="col-12">
@@ -360,13 +369,38 @@
       autoplay
     ></lottie-player> -->
 
-    <img
-      src="assets/img/Blank _ Jupiter Edge Website Section Join us .png"
-      alt=""
-      width="100%"
-      height="700px"
-      class="mt-my"
-    />
+    <section class="mt-my-2 conclution">
+      <div class="cnt px-2">
+        <div class="row justify-content-around">
+          <div class="col-lg-6 col-12">
+            <h1 class="text-light font-wt-700 lg-text mb-5">
+              We are all about<br />
+              your growth
+            </h1>
+            <p class="text-light font-wt-400 md-text mb-5">
+              At Jupiter Edge we have a super collaborative, creative &
+              inclusive work ethic. we are a bunch who love challenges. It’s
+              what makes us tick! It’s what helps us grow.<br /><br />
+              If the fintech space excites you as much as it excites us, come
+              work with us. We are always looking to add like-minded folks to
+              our team.
+            </p>
+            <button class="btn-default text-light">Apply Now</button>
+          </div>
+          <div class="col-lg-1"></div>
+        </div>
+      </div>
+      <lottie-player
+        class="d-block mx-auto img-fluid"
+        src="./assets/json/joinus.json"
+        background="transparent"
+        speed="1"
+        style="background-color: #222"
+        loop
+        autoplay
+      ></lottie-player>
+      <!-- <img src="assets/img/Group 5562.svg" alt="" width="100%" class="mt-my" /> -->
+    </section>
 
     <footer class="footer-area footer--light px-3">
       <div class="footer-big">
@@ -437,7 +471,11 @@
                 Jupiter deploys high level security standards to keep your money
                 sage
               </h6>
-              <img class="mb-5" src="assets/img/partners.svg" alt="" />
+              <img
+                class="mb-5 img-fluid"
+                src="assets/img/partners.svg"
+                alt=""
+              />
               <!-- </center> -->
             </div>
 
@@ -447,16 +485,22 @@
                   <h4 class="footer-widget-title mb-3">Usefull links</h4>
                   <ul>
                     <li class="mb-3">
-                      <a href="#">Careers</a>
+                      <a href="#" class="text-decoration-none">Careers</a>
                     </li>
                     <li class="mb-3">
-                      <a href="#">Privacy Policy</a>
+                      <a href="#" class="text-decoration-none"
+                        >Privacy Policy</a
+                      >
                     </li>
                     <li class="mb-3">
-                      <a href="#">Terms and Conditions</a>
+                      <a href="#" class="text-decoration-none"
+                        >Terms and Conditions</a
+                      >
                     </li>
                     <li class="mb-3">
-                      <a href="#">Subscribe to newsletter</a>
+                      <a href="#" class="text-decoration-none"
+                        >Subscribe to newsletter</a
+                      >
                     </li>
                   </ul>
                 </div>
@@ -493,5 +537,23 @@
         </div>
       </div>
     </footer>
+
+    <!-- Lottie Script -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
   </body>
 </html>
