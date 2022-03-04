@@ -100,7 +100,6 @@ ul li {
   color: #222;
   border: none;
   padding: 0.5rem 2rem;
-  font-size: 18px;
   border-radius: 5rem;
   cursor: pointer;
 }
@@ -144,7 +143,7 @@ ul li {
   height: 3200px;
   background-color: #444;
   position: absolute;
-  top: 1200px;
+  top: 1300px;
   left: 0;
   z-index: -1;
   transform: skewY(30deg);
@@ -173,7 +172,7 @@ ul li {
 
 ol.carousel-indicators {
   display: block;
-  margin: 220px 0;
+  margin: 230px 0;
 }
 
 ol.carousel-indicators li {
@@ -181,6 +180,7 @@ ol.carousel-indicators li {
   height: 20px;
   margin: 10px;
   border-radius: 10px;
+  border: 0;
   background: rgba(183, 179, 179, 0.2);
 }
 
@@ -193,6 +193,7 @@ ol.carousel-indicators li.active {
 .testimonial-heading {
   background: url(../../assets/img/dt.svg) no-repeat left top;
 }
+
 
 /* ---------------------------------------- Footer classes  --------------------------------------------- */
 
@@ -282,16 +283,17 @@ ol.carousel-indicators li.active {
   }
 
   .mt-my-3 {
-    margin-top: 60rem;
+    margin-top: 20rem;
   }
-
+  
   .mt-my {
-    margin-top: 10rem;
+    margin-top: 5rem;
   }
-
+  
   .mt-my-2 {
     margin-top: 10rem;
   }
+  
 
   .xsm-text {
     font-size: 10px;
@@ -318,9 +320,13 @@ ol.carousel-indicators li.active {
     font-size: 60px;
   }
 
+  .btn-default {
+    padding: 0.5rem 1rem;
+  }
+
   .slant-div {
     width: 100%;
-    height: 2500px;
+    height: 2100px;
     background-color: #444;
     position: absolute;
     top: 1000px;
