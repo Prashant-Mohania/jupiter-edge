@@ -37,8 +37,8 @@ let secondLottie = LottieInteractivity.create({
     },
     {
       state: "autoplay",
-      transition: "complete",
-      frames: [220, 250],
+      transition: "onComplete",
+      frames: [220, 240],
       reset: true,
     },
   ],
@@ -66,15 +66,11 @@ let thirdLottie = LottieInteractivity.create({
   ],
 });
 // $(".vertical").addClass("active");
+$("#text-carousel").carousel();
 
-let calenderLottie = LottieInteractivity.create({
-  player: "#calenderLottie",
-  mode: "scroll",
-  actions: [
-    {
-      visibility: [.1, .9],
-      type: "loop",
-      frames: [0, 180],
-    },
-  ],
+$("#img-carousel").on("slide.bs.carousel", function (event) {
+  // do something…
+  var to = $(event.relatedTarget).index();
+  $("#text-carousel").carousel(to);
+  console.log("slide");
 });

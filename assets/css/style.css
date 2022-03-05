@@ -188,12 +188,12 @@ ol.carousel-indicators li.active {
   background: rgba(183, 179, 179, 1);
 }
 
+
 /* ---------------------------------------- Testimonial classes  --------------------------------------------- */
 
 .testimonial-heading {
   background: url(../../assets/img/dt.svg) no-repeat left top;
 }
-
 
 /* ---------------------------------------- Footer classes  --------------------------------------------- */
 
@@ -285,15 +285,14 @@ ol.carousel-indicators li.active {
   .mt-my-3 {
     margin-top: 20rem;
   }
-  
+
   .mt-my {
     margin-top: 5rem;
   }
-  
+
   .mt-my-2 {
     margin-top: 10rem;
   }
-  
 
   .xsm-text {
     font-size: 10px;
