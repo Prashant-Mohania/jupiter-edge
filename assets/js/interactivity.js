@@ -1,4 +1,3 @@
-console.log("hello");
 let firstLottie = LottieInteractivity.create({
   player: "#firstLottie",
   mode: "chain",
@@ -10,15 +9,15 @@ let firstLottie = LottieInteractivity.create({
     },
     {
       state: "loop",
-      transition: "click",
-      frames: [90, 180],
+      transition: "onComplete",
+      frames: [90, 260],
     },
-    {
-      state: "autoplay",
-      transition: "complete",
-      frames: [180, 220],
-      reset: true,
-    },
+    // {
+    //   state: "autoplay",
+    //   transition: "onComplete",
+    //   frames: [230, 280],
+    //   reset: true,
+    // },
   ],
 });
 let secondLottie = LottieInteractivity.create({
@@ -35,12 +34,12 @@ let secondLottie = LottieInteractivity.create({
       transition: "onComplete",
       frames: [90, 220],
     },
-    {
-      state: "autoplay",
-      transition: "onComplete",
-      frames: [220, 240],
-      reset: true,
-    },
+    // {
+    //   state: "autoplay",
+    //   transition: "onComplete",
+    //   frames: [220, 240],
+    //   reset: true,
+    // },
   ],
 });
 let thirdLottie = LottieInteractivity.create({
@@ -54,23 +53,21 @@ let thirdLottie = LottieInteractivity.create({
     },
     {
       state: "loop",
-      // transition: "click",
-      frames: [90, 180],
+      transition: "onComplete",
+      frames: [90, 200],
     },
-    {
-      state: "autoplay",
-      transition: "complete",
-      frames: [180, 220],
-      reset: true,
-    },
+    // {
+    //   state: "autoplay",
+    //   transition: "onComplete",
+    //   frames: [180, 220],
+    //   reset: true,
+    // },
   ],
 });
 // $(".vertical").addClass("active");
-$("#text-carousel").carousel();
+// $("#text-carousel").carousel();
 
 $("#img-carousel").on("slide.bs.carousel", function (event) {
-  // do something…
   var to = $(event.relatedTarget).index();
   $("#text-carousel").carousel(to);
-  console.log("slide");
 });

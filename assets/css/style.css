@@ -188,7 +188,6 @@ ol.carousel-indicators li.active {
   background: rgba(183, 179, 179, 1);
 }
 
-
 /* ---------------------------------------- Testimonial classes  --------------------------------------------- */
 
 .testimonial-heading {
@@ -335,6 +334,13 @@ ol.carousel-indicators li.active {
     transform-origin: top left;
   }
 
+  ol.carousel-indicators {
+    /* display: none; */
+    margin: 150px 0;
+  }
+}
+
+@media (max-width: 774px) {
   ol.carousel-indicators {
     display: none;
   }

@@ -6,6 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./assets/css/style.css" />
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-VWTQ3W0GK5"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-VWTQ3W0GK5");
+    </script>
+
     <title>Edge</title>
 
     <!-- Bootstrap CSS -->
@@ -76,10 +91,10 @@
                 >
               </li>
             </ul>
-            <div class="mx-5"></div>
+            <!-- <div class="mx-5"></div> -->
             <button
               type="button"
-              class="btn-default ml-5 text-light font-wt-400 res-btn"
+              class="btn-default text-light font-wt-400 res-btn"
             >
               Download now
             </button>
@@ -123,7 +138,7 @@
     <section class="features mt-my-2">
       <div class="cnt">
         <div class="row justify-between mt-my-2 px-2">
-          <div class="col-lg-6 col-12">
+          <div class="col-lg-6 col-md-6 col-12">
             <div
               id="img-carousel"
               class="carousel vert slide"
@@ -131,7 +146,7 @@
               data-interval="false"
             >
               <div class="row">
-                <div class="col-lg-10 col-12">
+                <div class="col-lg-10 col-md-10 col-12">
                   <div class="carousel-inner">
                     <div class="carousel-item active">
                       <lottie-player
@@ -169,7 +184,7 @@
                   </div>
                 </div>
 
-                <div class="col-lg-2 col-12">
+                <div class="col-lg-2 col-md-2 col-12">
                   <ol class="carousel-indicators">
                     <li
                       data-target="#img-carousel"
@@ -184,7 +199,7 @@
             </div>
           </div>
 
-          <div class="col-lg-6 col-12 my-auto px-2">
+          <div class="col-lg-6 col-md-6 col-12 my-auto">
             <div
               id="text-carousel"
               class="carousel vert slide"
@@ -194,7 +209,7 @@
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <h3 class="text-light font-wt-700 lg-text">
-                    Get upto Rs. 25,000<br />Credit Limit 1
+                    Get upto Rs. 25,000<br />Credit Limit
                   </h3>
                   <p class="text-light font-wt-400 md-text">
                     Do more with higher credit limit!<br />Get upto ₹25,000
@@ -240,7 +255,7 @@
       <div class="mt-my-2">
         <div class="cnt">
           <div class="row justify-between mt-5 px-2">
-            <div class="col-lg-6 my-auto">
+            <div class="col-lg-6 col-md-6 my-auto">
               <h3 class="text-light font-wt-700 lg-text">
                 Shop now and<br />Pay in 15 days
               </h3>
@@ -251,7 +266,7 @@
                 tincidunt ut
               </p>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-6">
               <lottie-player
                 id="calenderLottie"
                 class="d-block mx-auto img-fluid"
