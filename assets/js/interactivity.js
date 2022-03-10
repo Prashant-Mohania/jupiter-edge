@@ -64,8 +64,74 @@ let thirdLottie = LottieInteractivity.create({
     // },
   ],
 });
-// $(".vertical").addClass("active");
-// $("#text-carousel").carousel();
+
+let landingAnim = LottieInteractivity.create({
+  player: "#landing-anim",
+  mode: "scroll",
+  actions: [
+    {
+      visibility: [0, 0.2],
+      type: "stop",
+      frames: [0],
+    },
+    {
+      visibility: [0.2, 1.0],
+      type: "loop",
+      frames: [0, 240],
+    },
+  ],
+});
+
+let calenderAnim = LottieInteractivity.create({
+  player: "#calender-anim",
+  mode: "scroll",
+  actions: [
+    {
+      visibility: [0, 0.2],
+      type: "stop",
+      frames: [0],
+    },
+    {
+      visibility: [0.2, 1.0],
+      type: "loop",
+      frames: [0, 240],
+    },
+  ],
+});
+
+let conveyorAnim = LottieInteractivity.create({
+  player: "#conveyor-anim",
+  mode: "scroll",
+  actions: [
+    {
+      visibility: [0, 0.2],
+      type: "stop",
+      frames: [0],
+    },
+    {
+      visibility: [0.2, 1.0],
+      type: "loop",
+      frames: [0, 240],
+    },
+  ],
+});
+
+let summaryAnim = LottieInteractivity.create({
+  player: "#summary-anim",
+  mode: "scroll",
+  actions: [
+    {
+      visibility: [0, 0.2],
+      type: "stop",
+      frames: [0],
+    },
+    {
+      visibility: [0.2, 1.0],
+      type: "loop",
+      frames: [0, 240],
+    },
+  ],
+});
 
 $("#img-carousel").on("slide.bs.carousel", function (event) {
   var to = $(event.relatedTarget).index();

@@ -34,7 +34,7 @@ ul li {
 /* ------------------------------------------------  utility classes  -------------------------------------- */
 
 .mt-my-3 {
-  margin-top: 60rem;
+  margin-top: 30rem;
 }
 
 .mt-my {
@@ -140,7 +140,7 @@ ul li {
 
 .slant-div {
   width: 100%;
-  height: 2900px;
+  height: 3000px;
   background-color: #444;
   position: absolute;
   top: 1200px;
@@ -192,6 +192,23 @@ ol.carousel-indicators li.active {
 
 .testimonial-heading {
   background: url(../../assets/img/dt.svg) no-repeat left top;
+  padding-bottom: 20px;
+}
+
+.testimonial-box {
+  background-color: #323232 !important;
+}
+
+.card {
+  border-radius: 15px!important;
+}
+
+.my-ml {
+  margin-left: 150px;
+}
+
+.my-mr {
+  margin-right: 100px;
 }
 
 /* ---------------------------------------- Footer classes  --------------------------------------------- */
