@@ -133,7 +133,19 @@ let summaryAnim = LottieInteractivity.create({
   ],
 });
 
-$("#img-carousel").on("slide.bs.carousel", function (event) {
-  var to = $(event.relatedTarget).index();
-  $("#text-carousel").carousel(to);
-});
+function splitScroll(element) {
+  const controller = new ScrollMagic.Controller();
+
+  new ScrollMagic.Scene({
+    duration: "200%",
+    triggerElement: element,
+    triggerHook: 0,
+  })
+    .setPin(element)
+    .addTo(controller);
+}
+
+splitScroll(".slider-right");
+splitScroll(".slider-indicator");
+
+console.log(0);

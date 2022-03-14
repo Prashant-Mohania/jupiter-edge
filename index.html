@@ -1,508 +1,574 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-VWTQ3W0GK5"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VWTQ3W0GK5"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
+      gtag("config", "G-VWTQ3W0GK5");
+    </script>
 
-    gtag("config", "G-VWTQ3W0GK5");
-  </script>
+    <title>Edge</title>
 
-  <title>Edge</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-    crossorigin="anonymous"></script>
-</head>
-
-<body style="background-color: #222">
-  <header class="header">
-    <div class="cnt">
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <img src="assets/img/logo.svg" alt="logo" class="logo navbar-brand" />
-        <button class="btn-default sm-text font-wt-400 btn-res text-light" type="button" data-toggle="collapse"
-          data-target="#navbarSupportedContent">
-          Download now
-        </button>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent">
-          <div onclick="myFunction(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-          </div>
-        </button>
-
-        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item mt-3">
-              <a class="text-red sm-text mx-4 text-decoration-none active" href="#">Community</a>
-            </li>
-            <li class="nav-item dropdown mt-3">
-              <a class="text-red dropdown-toggle mx-4 sm-text text-decoration-none" href="#">Credit</a>
-            </li>
-            <li class="nav-item dropdown mt-3">
-              <a class="text-red dropdown-toggle sm-text mx-4 text-decoration-none" href="#">Lifestyle</a>
-            </li>
-            <li class="nav-item mt-3">
-              <a class="text-red sm-text mx-4 red-text text-decoration-none" href="#">About us</a>
-            </li>
-          </ul>
-          <button type="button" class="btn-default text-light font-wt-400 res-btn">
+  <body style="background-color: #222">
+    <header class="header">
+      <div class="cnt">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <img src="assets/img/logo.svg" alt="logo" class="logo navbar-brand" />
+          <button
+            class="btn-default sm-text font-wt-400 btn-res text-light"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+          >
             Download now
           </button>
-        </div>
-      </nav>
-    </div>
-    </div>
-  </header>
-
-  <section class="cover-page">
-    <div class="cnt">
-      <div class="text-center mt-my">
-        <h1 class="text-light text-uppercase lg-text font-wt-400">
-          cut ahead to the
-        </h1>
-        <h1 class="text-light text-uppercase xl-text font-wt-700 mb-4">
-          good part
-        </h1>
-        <p class="text-light sm-text">
-          With a fast, secure and seamless way to <br />
-          buy stuff now, & pay later.<br />There’s no other like us, you’ll
-          see!
-        </p>
-        <div class="mt-5">
-          <img class="mr-3" src="assets/img/play-store.svg" alt="" />
-          <img src="assets/img/app-store.svg" alt="" />
-        </div>
-      </div>
-      <lottie-player id="landing-anim" class="d-block mx-auto img-fluid" src="./assets/json/hero landing .json"
-        background="transparent"></lottie-player>
-    </div>
-    <div class="slant-div"></div>
-  </section>
-
-  <section class="features">
-    <div class="cnt">
-      <div class="row justify-between mt-my px-2">
-        <div class="col-lg-7 col-md-7 col-12">
-          <div id="img-carousel" class="carousel vert slide" data-ride="carousel" data-interval="false">
-            <div class="row">
-              <div class="col-lg-11 col-md-11 col-12">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <lottie-player id="firstLottie" class="d-block mx-auto img-fluid" src="./assets/json/25k_Full.json"
-                      background="transparent" speed="1" loop autoplay></lottie-player>
-                  </div>
-                  <div class="carousel-item">
-                    <lottie-player id="secondLottie" class="d-block mx-auto img-fluid"
-                      src="./assets/json/No Interest_Full.json" background="transparent" speed="1" loop autoplay>
-                    </lottie-player>
-                  </div>
-                  <div class="carousel-item">
-                    <lottie-player id="thirdLottie" class="d-block mx-auto img-fluid"
-                      src="./assets/json/shopping_full.json" background="transparent" speed="1" loop autoplay>
-                    </lottie-player>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-1 col-md-1 col-12">
-                <ol class="carousel-indicators">
-                  <li data-target="#img-carousel" data-slide-to="0" class="active"></li>
-                  <li data-target="#img-carousel" data-slide-to="1"></li>
-                  <li data-target="#img-carousel" data-slide-to="2"></li>
-                </ol>
-              </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+          >
+            <div onclick="myFunction(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
             </div>
-          </div>
-        </div>
+          </button>
 
-        <div class="col-lg-5 col-md-5 col-12 my-auto">
-          <div id="text-carousel" class="carousel vert slide" data-ride="carousel" data-interval="false">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <h3 class="text-light font-wt-700 lg-text">
-                  Get upto Rs.25,000<br />Credit Limit
-                </h3>
-                <p class="text-light font-wt-400 md-text">
-                  Do more with higher credit limit!<br />Get upto ₹25,000
-                  within minutes!
-                </p>
-              </div>
-              <div class="carousel-item">
-                <h3 class="text-light font-wt-700 lg-text">
-                  Shop Anywhere.<br />
-                  Online/Offline
-                </h3>
-                <p class="text-light font-wt-400 md-text">
-                  Lorem ipsum dolor sit amet, consectetuer<br />
-                  elit, sed diam nonummy nibh euismod<br />
-                  tincidunt ut<br />
-                  laoreet dolore magna aliquam erat<br />
-                  volutpat. Ut wisi
-                </p>
-              </div>
-              <div class="carousel-item">
-                <h3 class="text-light font-wt-700 lg-text">
-                  No Interest. No Fees.
-                </h3>
-                <p class="text-light font-wt-400 md-text">
-                  We got nothing to hide. No unclear statements.<br />
-                  No hidden costs. No random fees.
-                </p>
-              </div>
-            </div>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item mt-3">
+                <a
+                  class="text-red sm-text mx-4 text-decoration-none active"
+                  href="#"
+                  >Community</a
+                >
+              </li>
+              <li class="nav-item dropdown mt-3">
+                <a
+                  class="text-red dropdown-toggle mx-4 sm-text text-decoration-none"
+                  href="#"
+                  >Credit</a
+                >
+              </li>
+              <li class="nav-item dropdown mt-3">
+                <a
+                  class="text-red dropdown-toggle sm-text mx-4 text-decoration-none"
+                  href="#"
+                  >Lifestyle</a
+                >
+              </li>
+              <li class="nav-item mt-3">
+                <a
+                  class="text-red sm-text mx-4 red-text text-decoration-none"
+                  href="#"
+                  >About us</a
+                >
+              </li>
+            </ul>
+            <button
+              type="button"
+              class="btn-default text-light font-wt-400 res-btn"
+            >
+              Download now
+            </button>
           </div>
-
-          <!-- <h3 class="text-light font-wt-700 lg-text">
-              Get upto Rs. 25,000<br />Credit Limit
-            </h3>
-            <p class="text-light font-wt-400 md-text">
-              Do more with higher credit limit!<br />Get upto ₹25,000 within
-              minutes!
-            </p> -->
-        </div>
+        </nav>
       </div>
-    </div>
+    </header>
 
-    <div class="mt-my-2">
+    <section class="cover-page">
       <div class="cnt">
-        <div class="row justify-between mt-5 px-2">
-          <div class="col-lg-6 col-md-6 my-auto">
+        <div class="text-center mt-my">
+          <h1 class="text-light text-uppercase lg-text font-wt-400">
+            cut ahead to the
+          </h1>
+          <h1 class="text-light text-uppercase xl-text font-wt-700 mb-4">
+            good part
+          </h1>
+          <p class="text-light sm-text">
+            With a fast, secure and seamless way to <br />
+            buy stuff now, & pay later.<br />There’s no other like us, you’ll
+            see!
+          </p>
+          <div class="mt-5">
+            <img class="mr-3" src="assets/img/play-store.svg" alt="" />
+            <img src="assets/img/app-store.svg" alt="" />
+          </div>
+        </div>
+        <lottie-player
+          id="landing-anim"
+          class="d-block mx-auto img-fluid"
+          src="./assets/json/hero landing .json"
+          background="transparent"
+        ></lottie-player>
+      </div>
+      <div class="slant-div"></div>
+    </section>
+
+    <section class="features cnt">
+      <div class="slider-left">
+        <div class="first-anim">
+          <lottie-player
+            id="firstLottie"
+            class="d-block mx-auto img-fluid"
+            src="./assets/json/25k_Full.json"
+            background="transparent"
+            speed="1"
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
+        <div class="second-anim">
+          <lottie-player
+            id="secondLottie"
+            class="d-block mx-auto img-fluid"
+            src="./assets/json/No Interest_Full.json"
+            background="transparent"
+            speed="1"
+            loop
+            autoplay
+          >
+          </lottie-player>
+        </div>
+        <div class="third-anim">
+          <lottie-player
+            id="thirdLottie"
+            class="d-block mx-auto img-fluid"
+            src="./assets/json/shopping_full.json"
+            background="transparent"
+            speed="1"
+            loop
+            autoplay
+          >
+          </lottie-player>
+        </div>
+      </div>
+
+      <div class="slider-right">
+        <div class="row">
+          <div class="col-lg-2">
+            <div class="slider-indicators">
+              <ol class="indicators mt-5">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+              </ol>
+            </div>
+          </div>
+          <div class="col-lg-10 col-12">
             <h3 class="text-light font-wt-700 lg-text">
-              Shop now and<br />Pay in 15 days
+              Get upto Rs.25,000 Pay in 15 days
             </h3>
             <p class="text-light font-wt-400 md-text">
-              Don't worry, we'll send you bills twice<br />
-              a month & timely reminders to make<br />
-              sure you're never behind your<br />
-              payments.
+              Do more with higer credit limit!<br />
+              Get upto ₹25,000 credit within minutes!
             </p>
-          </div>
-          <div class="col-lg-6 col-md-6">
-            <lottie-player id="calender-anim" class="d-block mx-auto img-fluid" src="./assets/json/calendar.json"
-              background="transparent" speed="1" loop autoplay></lottie-player>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="mt-my-2">
-      <div class="cnt px-2">
-        <div class="row">
-          <div class="col-2"></div>
-          <div class="col-lg-9 col-12">
-            <h1 class="text-light font-wt-700 lg-text mb-5">
-              Take us anywhere & everywhere
-            </h1>
-            <p class="text-light font-wt-400 md-text mr-lg-5">
-              Need to catch up with friends for a drink? Got the munchies?<br />
-              Need some online retail therapy? Or got month-end bills to pay?<br /><br />
-              We got you! Spend with Jupiter Edge anywhere, everywhere
-              hassle-free!
-            </p>
-          </div>
-          <div class="col-1"></div>
-        </div>
-        <lottie-player id="conveyor-anim" class="d-block mx-auto img-fluid" src="./assets/json/conveyor.json" background="transparent"
-          speed="1"></lottie-player>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Testimonial section start -->
-  <section class="mt-my-3">
-    <div class="cnt">
-      <div class="row testimonial-heading mb-5 p-2 mx-md-auto mx-sm-auto">
-        <div class="col-lg-6 col-12">
-          <div class="row">
-            <div class="col-12 ml-5 mt-5">
-              <h1 class="lg-text font-wt-700 text-light">
-                We clock in extra<br />hours just for you
-              </h1>
-              <p class="sm-text text-light">
-                Your love inspires us to cut ahead everyday.
+    <section class="mt-my">
+      <div class="mt-my-2">
+        <div class="cnt">
+          <div class="row justify-between mt-5 px-2">
+            <div class="col-lg-6 col-md-6 my-auto">
+              <h3 class="text-light font-wt-700 lg-text">
+                Shop now and<br />Pay in 15 days
+              </h3>
+              <p class="text-light font-wt-400 md-text">
+                Don't worry, we'll send you bills twice<br />
+                a month & timely reminders to make<br />
+                sure you're never behind your<br />
+                payments.
               </p>
             </div>
-            <!-- left side testimonial -->
-            <div class="col-12 mt-5">
-              <div class="card testimonial-box p-4 my-ml">
-                <img src="assets/img/hubspot.svg" alt="" width="40%" />
-                <div class="card-body mt-4">
-                  <div class="row">
-                    <div class="col-1">
-                      <img src="assets/img/dt-light.svg" alt="" width="15px" />
-                    </div>
-                    <div class="col-10">
-                      <div class="card-text font-wt-400 text-light md-text">
-                        To quickly start my startup landing page design, I was
-                        looking for a landing page UI Kit. Landify is one of
-                        the best landing page UI kit I have come across. It’s
-                        so flexible, well organised and easily editable.
-                      </div>
-                      <h2 class="text-light sm-text font-wt-700 mt-5">
-                        Floyd Miles
-                      </h2>
-                      <h3 class="text-light font-wt-700 xsm-text">
-                        Vice President, GoPro
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="col-lg-6 col-md-6">
+              <lottie-player
+                id="calender-anim"
+                class="d-block mx-auto img-fluid"
+                src="./assets/json/calendar.json"
+                background="transparent"
+                speed="1"
+                loop
+                autoplay
+              ></lottie-player>
             </div>
           </div>
         </div>
-        <!-- right side testimonial -->
-        <div class="col-lg-6 col-12 mt-5">
+      </div>
+
+      <div class="mt-my-2">
+        <div class="cnt px-2">
           <div class="row">
-            <div class="col-12 my-5">
-              <div class="card testimonial-box p-4">
-                <img src="assets/img/airbnb.svg" alt="" width="40%" />
-                <div class="card-body mt-4">
-                  <div class="row">
-                    <div class="col-1">
-                      <img src="assets/img/dt-light.svg" alt="" width="15px" />
-                    </div>
-                    <div class="col-11">
-                      <div class="card-text font-wt-400 text-light md-text">
-                        I used landify and created a landing page for my
-                        startup within a week. The Landify UI Kit is simple
-                        and highly intuitive, so anyone can use it.
-                      </div>
-                      <h2 class="text-light sm-text font-wt-700 mt-5">
-                        Jane Cooper
-                      </h2>
-                      <h3 class="text-light font-wt-700 xsm-text">
-                        CEO, Airbnb
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="col-2"></div>
+            <div class="col-lg-9 col-12">
+              <h1 class="text-light font-wt-700 lg-text mb-5">
+                Take us anywhere & everywhere
+              </h1>
+              <p class="text-light font-wt-400 md-text mr-lg-5">
+                Need to catch up with friends for a drink? Got the munchies?<br />
+                Need some online retail therapy? Or got month-end bills to
+                pay?<br /><br />
+                We got you! Spend with Jupiter Edge anywhere, everywhere
+                hassle-free!
+              </p>
             </div>
-            <div class="col-12 mr-5">
-              <div class="card testimonial-box my-mr">
-                <img src="assets/img/bookmyshow.svg" alt="" width="40%" class="pl-4 pt-4" />
-                <div class="card-body mt-4">
-                  <div class="row">
-                    <div class="col-1">
-                      <img src="assets/img/dt-light.svg" alt="" width="15px" />
-                    </div>
-                    <div class="col-10">
-                      <div class="card-text font-wt-400 text-light md-text">
-                        Landify saved our time in designing my company page.
-                      </div>
-                      <h2 class="text-light sm-text font-wt-700 mt-5">
-                        Kristin Watson
-                      </h2>
-                      <h3 class="text-light font-wt-700 xsm-text">
-                        Co-Founder, BookMyShow
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div class="col-1"></div>
           </div>
+          <lottie-player
+            id="conveyor-anim"
+            class="d-block mx-auto img-fluid"
+            src="./assets/json/conveyor.json"
+            background="transparent"
+            speed="1"
+          ></lottie-player>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- testimonial section end -->
-
-  <!-- Summary section start -->
-
-  <section class="mt-my-2 conclution">
-    <div class="cnt px-2">
-      <div class="row justify-content-around">
-        <div class="col-lg-6 col-12">
-          <h1 class="text-light font-wt-700 lg-text mb-5">
-            We are all about<br />
-            your growth
-          </h1>
-          <p class="text-light font-wt-400 md-text mb-5">
-            At Jupiter Edge we have a super collaborative, creative &
-            inclusive work ethic. we are a bunch who love challenges. It’s
-            what makes us tick! It’s what helps us grow.<br /><br />
-            If the fintech space excites you as much as it excites us, come
-            work with us. We are always looking to add like-minded folks to
-            our team.
-          </p>
-          <button class="btn-default text-light">Apply Now</button>
-        </div>
-        <div class="col-lg-1"></div>
-      </div>
-    </div>
-    <lottie-player id="summary-anim" class="d-block mx-auto img-fluid" src="./assets/json/joinus.json" background="transparent" speed="1"
-      loop autoplay></lottie-player>
-    <!-- <img src="assets/img/Group 5562.svg" alt="" width="100%" class="mt-my" /> -->
-  </section>
-  <!-- summary section end -->
-
-  <footer class="footer-area footer--light px-3">
-    <div class="footer-big">
+    <!-- Testimonial section start -->
+    <section class="mt-my-3">
       <div class="cnt">
-        <div class="row align-content-center justify-between">
-          <div class="col-12 col-lg-4 mt-3">
-            <div class="fees-charges">
-              <h5 class="sm-text font-wt-400">Fees and Charges</h5>
-              <button class="btn-more">Know More</button>
+        <div class="row testimonial-heading mb-5 p-2 mx-md-auto mx-sm-auto">
+          <div class="col-lg-6 col-12">
+            <div class="row">
+              <div class="col-12 ml-5 mt-5">
+                <h1 class="lg-text font-wt-700 text-light">
+                  We clock in extra<br />hours just for you
+                </h1>
+                <p class="sm-text text-light">
+                  Your love inspires us to cut ahead everyday.
+                </p>
+              </div>
+              <!-- left side testimonial -->
+              <div class="col-12 mt-5">
+                <div class="card testimonial-box p-4 my-ml">
+                  <img src="assets/img/hubspot.svg" alt="" width="40%" />
+                  <div class="card-body mt-4">
+                    <div class="row">
+                      <div class="col-1">
+                        <img
+                          src="assets/img/dt-light.svg"
+                          alt=""
+                          width="15px"
+                        />
+                      </div>
+                      <div class="col-10">
+                        <div class="card-text font-wt-400 text-light md-text">
+                          To quickly start my startup landing page design, I was
+                          looking for a landing page UI Kit. Landify is one of
+                          the best landing page UI kit I have come across. It’s
+                          so flexible, well organised and easily editable.
+                        </div>
+                        <h2 class="text-light sm-text font-wt-700 mt-5">
+                          Floyd Miles
+                        </h2>
+                        <h3 class="text-light font-wt-700 xsm-text">
+                          Vice President, GoPro
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-12 col-lg-4 mt-3">
-            <div class="tnc">
-              <h5 class="sm-text font-wt-400">Terms and Conditions</h5>
-              <button class="btn-more">Know More</button>
-            </div>
-          </div>
-          <div class="col-12 col-lg-4 mt-3">
-            <div class="support">
-              <h5 class="sm-text font-wt-400">Write to us at</h5>
-              <h5 style="font-size: 18px; font-weight: 400">
-                support@jupiter.money
-              </h5>
-              <div class="row">
-                <div class="col-2">
-                  <img src="assets/img/mail.svg" alt="" />
+          <!-- right side testimonial -->
+          <div class="col-lg-6 col-12 mt-5">
+            <div class="row">
+              <div class="col-12 my-5">
+                <div class="card testimonial-box p-4">
+                  <img src="assets/img/airbnb.svg" alt="" width="40%" />
+                  <div class="card-body mt-4">
+                    <div class="row">
+                      <div class="col-1">
+                        <img
+                          src="assets/img/dt-light.svg"
+                          alt=""
+                          width="15px"
+                        />
+                      </div>
+                      <div class="col-11">
+                        <div class="card-text font-wt-400 text-light md-text">
+                          I used landify and created a landing page for my
+                          startup within a week. The Landify UI Kit is simple
+                          and highly intuitive, so anyone can use it.
+                        </div>
+                        <h2 class="text-light sm-text font-wt-700 mt-5">
+                          Jane Cooper
+                        </h2>
+                        <h3 class="text-light font-wt-700 xsm-text">
+                          CEO, Airbnb
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-2">
-                  <img src="assets/img/telegram.svg" alt="" />
-                </div>
-                <div class="col-2">
-                  <img src="assets/img/fb.svg" alt="" />
-                </div>
-                <div class="col-2">
-                  <img src="assets/img/linkedin.svg" alt="" />
-                </div>
-                <div class="col-2">
-                  <img src="assets/img/yt.svg" alt="" />
-                </div>
-                <div class="col-2">
-                  <img src="assets/img/twitter.svg" alt="" />
+              </div>
+              <div class="col-12 mr-5">
+                <div class="card testimonial-box my-mr">
+                  <img
+                    src="assets/img/bookmyshow.svg"
+                    alt=""
+                    width="40%"
+                    class="pl-4 pt-4"
+                  />
+                  <div class="card-body mt-4">
+                    <div class="row">
+                      <div class="col-1">
+                        <img
+                          src="assets/img/dt-light.svg"
+                          alt=""
+                          width="15px"
+                        />
+                      </div>
+                      <div class="col-10">
+                        <div class="card-text font-wt-400 text-light md-text">
+                          Landify saved our time in designing my company page.
+                        </div>
+                        <h2 class="text-light sm-text font-wt-700 mt-5">
+                          Kristin Watson
+                        </h2>
+                        <h3 class="text-light font-wt-700 xsm-text">
+                          Co-Founder, BookMyShow
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="row justify-content-between mt-5">
-          <div class="col-md-12 col-lg-2 col-sm-12">
-            <div class="footer-widget">
-              <div class="widget-about">
-                <img src="assets/img/logo.svg" alt="" class="img-fluid" />
-                <img src="assets/img/app-store.svg" alt="" />
-                <img src="assets/img/play-store.svg" alt="" />
-              </div>
-            </div>
-          </div>
+    <!-- testimonial section end -->
 
-          <div class="col-md-12 col-lg-6 col-sm-12 mt-5 text-center">
-            <h2 class="text-light">Working with trusted partners</h2>
-            <h6 class="text-light xsm-text mb-3">
-              Jupiter deploys high level security standards to keep your money
-              sage
-            </h6>
-            <img class="mb-5 img-fluid" src="assets/img/partners.svg" alt="" />
-          </div>
+    <!-- Summary section start -->
 
-          <div class="col-md-12 col-lg-3 col-sm-12 align-item-end mt-4">
-            <div class="footer-widget">
-              <div class="footer-menu no-padding">
-                <h4 class="footer-widget-title mb-3">Usefull links</h4>
-                <ul>
-                  <li class="mb-3">
-                    <a href="#" class="text-decoration-none">Careers</a>
-                  </li>
-                  <li class="mb-3">
-                    <a href="#" class="text-decoration-none">Privacy Policy</a>
-                  </li>
-                  <li class="mb-3">
-                    <a href="#" class="text-decoration-none">Terms and Conditions</a>
-                  </li>
-                  <li class="mb-3">
-                    <a href="#" class="text-decoration-none">Subscribe to newsletter</a>
-                  </li>
-                </ul>
-              </div>
-              <!-- end /.footer-menu -->
-            </div>
-            <!-- Ends: .footer-widget -->
+    <section class="mt-my-2 conclution">
+      <div class="cnt px-2">
+        <div class="row justify-content-around">
+          <div class="col-lg-6 col-12">
+            <h1 class="text-light font-wt-700 lg-text mb-5">
+              We are all about<br />
+              your growth
+            </h1>
+            <p class="text-light font-wt-400 md-text mb-5">
+              At Jupiter Edge we have a super collaborative, creative &
+              inclusive work ethic. we are a bunch who love challenges. It’s
+              what makes us tick! It’s what helps us grow.<br /><br />
+              If the fintech space excites you as much as it excites us, come
+              work with us. We are always looking to add like-minded folks to
+              our team.
+            </p>
+            <button class="btn-default text-light">Apply Now</button>
           </div>
-          <!-- Ends: .col-lg-3 -->
+          <div class="col-lg-1"></div>
         </div>
-        <!-- end /.row -->
       </div>
-      <!-- end /.cnt -->
-    </div>
-    <!-- end /.footer-big -->
-    <div class="cnt">
-      <div class="row justify-content-center text-center">
-        <h6 class="text-light mb-3">
-          The Jupiter savings bank account and VISA debit card are provided
-          through and in partnership with an RBI-licensed bank. All funds in
-          the Jupiter account are insured as per limits under the RBI’s
-          deposit insurance scheme. Your Jupiter account is hosted by our
-          partner bank and follows all security standards prescribed by the
-          partner bank, in accordance with RBI regulations. Jupiter itself is
-          not a bank and doesn’t hold or claim to hold a banking license. Your
-          money is always safe with our partner bank. Amica Investment
-          Advisers Private Limited, is a SEBI registered Investment Adviser -
-          INA000015507. Mutual Funds investments are subject to market risks,
-          read all scheme related documents carefully. Past performance is not
-          an indicator for future returns.
-        </h6>
-        <h6 class="text-light mb-5">
-          &copy; Amica Technologies Pvt. Ltd. 2021
-        </h6>
+      <lottie-player
+        id="summary-anim"
+        class="d-block mx-auto img-fluid"
+        src="./assets/json/joinus.json"
+        background="transparent"
+        speed="1"
+        loop
+        autoplay
+      ></lottie-player>
+      <!-- <img src="assets/img/Group 5562.svg" alt="" width="100%" class="mt-my" /> -->
+    </section>
+    <!-- summary section end -->
+
+    <footer class="footer-area footer--light px-3">
+      <div class="footer-big">
+        <div class="cnt">
+          <div class="row align-content-center justify-between">
+            <div class="col-12 col-lg-4 mt-3">
+              <div class="fees-charges">
+                <h5 class="sm-text font-wt-400">Fees and Charges</h5>
+                <button class="btn-more">Know More</button>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 mt-3">
+              <div class="tnc">
+                <h5 class="sm-text font-wt-400">Terms and Conditions</h5>
+                <button class="btn-more">Know More</button>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 mt-3">
+              <div class="support">
+                <h5 class="sm-text font-wt-400">Write to us at</h5>
+                <h5 style="font-size: 18px; font-weight: 400">
+                  support@jupiter.money
+                </h5>
+                <div class="row">
+                  <div class="col-2">
+                    <img src="assets/img/mail.svg" alt="" />
+                  </div>
+                  <div class="col-2">
+                    <img src="assets/img/telegram.svg" alt="" />
+                  </div>
+                  <div class="col-2">
+                    <img src="assets/img/fb.svg" alt="" />
+                  </div>
+                  <div class="col-2">
+                    <img src="assets/img/linkedin.svg" alt="" />
+                  </div>
+                  <div class="col-2">
+                    <img src="assets/img/yt.svg" alt="" />
+                  </div>
+                  <div class="col-2">
+                    <img src="assets/img/twitter.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-between mt-5">
+            <div class="col-md-12 col-lg-2 col-sm-12">
+              <div class="footer-widget">
+                <div class="widget-about">
+                  <img src="assets/img/logo.svg" alt="" class="img-fluid" />
+                  <img src="assets/img/app-store.svg" alt="" />
+                  <img src="assets/img/play-store.svg" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-12 col-lg-6 col-sm-12 mt-5 text-center">
+              <h2 class="text-light">Working with trusted partners</h2>
+              <h6 class="text-light xsm-text mb-3">
+                Jupiter deploys high level security standards to keep your money
+                sage
+              </h6>
+              <img
+                class="mb-5 img-fluid"
+                src="assets/img/partners.svg"
+                alt=""
+              />
+            </div>
+
+            <div class="col-md-12 col-lg-3 col-sm-12 align-item-end mt-4">
+              <div class="footer-widget">
+                <div class="footer-menu no-padding">
+                  <h4 class="footer-widget-title mb-3">Usefull links</h4>
+                  <ul>
+                    <li class="mb-3">
+                      <a href="#" class="text-decoration-none">Careers</a>
+                    </li>
+                    <li class="mb-3">
+                      <a href="#" class="text-decoration-none"
+                        >Privacy Policy</a
+                      >
+                    </li>
+                    <li class="mb-3">
+                      <a href="#" class="text-decoration-none"
+                        >Terms and Conditions</a
+                      >
+                    </li>
+                    <li class="mb-3">
+                      <a href="#" class="text-decoration-none"
+                        >Subscribe to newsletter</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- end /.footer-menu -->
+              </div>
+              <!-- Ends: .footer-widget -->
+            </div>
+            <!-- Ends: .col-lg-3 -->
+          </div>
+          <!-- end /.row -->
+        </div>
+        <!-- end /.cnt -->
       </div>
-    </div>
-  </footer>
+      <!-- end /.footer-big -->
+      <div class="cnt">
+        <div class="row justify-content-center text-center">
+          <h6 class="text-light mb-3">
+            The Jupiter savings bank account and VISA debit card are provided
+            through and in partnership with an RBI-licensed bank. All funds in
+            the Jupiter account are insured as per limits under the RBI’s
+            deposit insurance scheme. Your Jupiter account is hosted by our
+            partner bank and follows all security standards prescribed by the
+            partner bank, in accordance with RBI regulations. Jupiter itself is
+            not a bank and doesn’t hold or claim to hold a banking license. Your
+            money is always safe with our partner bank. Amica Investment
+            Advisers Private Limited, is a SEBI registered Investment Adviser -
+            INA000015507. Mutual Funds investments are subject to market risks,
+            read all scheme related documents carefully. Past performance is not
+            an indicator for future returns.
+          </h6>
+          <h6 class="text-light mb-5">
+            &copy; Amica Technologies Pvt. Ltd. 2021
+          </h6>
+        </div>
+      </div>
+    </footer>
 
-  <script>
-    function myFunction(x) {
-      x.classList.toggle("change");
-    }
-  </script>
+    <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
+      }
+    </script>
 
-  <!-- bootstrap -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+    <!-- scroll magic -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+      integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
-  <!-- lottie interactivity -->
-  <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+    <!-- lottie interactivity -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
 
-  <script type="module" src="assets/js/interactivity.js"></script>
-  <!-- Lottie Script -->
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-</body>
-
+    <script type="module" src="assets/js/interactivity.js"></script>
+    <!-- Lottie Script -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </body>
 </html>
